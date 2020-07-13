@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAdressEventActivity"
+    android:background="@color/nice_blue">
+
+    <EditText
+        android:id="@+id/new_adress_event_adress"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rounded_corners_edittext"
+        android:ems="10"
+        android:focusedByDefault="true"
+        android:hint="Адрес"
+        android:inputType="textPersonName"
+        android:maxLength="50"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/new_adress_event_title"
+        app:layout_constraintTop_toBottomOf="@+id/new_adress_event_title" />
+
+    <EditText
+        android:id="@+id/new_adress_event_title"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rounded_corners_edittext"
+        android:ems="10"
+        android:focusedByDefault="true"
+        android:hint="Название"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/new_adress_event_date"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_edittext"
+        android:hint="Дата"
+        android:padding="12dp"
+        android:paddingVertical="10dp"
+        android:singleLine="true"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/new_adress_event_title"
+        app:layout_constraintStart_toStartOf="@+id/new_adress_event_title"
+        app:layout_constraintTop_toBottomOf="@+id/new_adress_event_adress" />
+
+    <TextView
+        android:id="@+id/new_adress_event_time"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_edittext"
+        android:hint="Время"
+        android:padding="12dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/new_adress_event_date"
+        app:layout_constraintStart_toStartOf="@+id/new_adress_event_date"
+        app:layout_constraintTop_toBottomOf="@+id/new_adress_event_date" />
+
+    <EditText
+        android:id="@+id/new_adress_event_amount"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_edittext"
+        android:ems="10"
+        android:hint="Кол-во участников"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="10dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/new_adress_event_time"
+        app:layout_constraintStart_toStartOf="@+id/new_adress_event_time"
+        app:layout_constraintTop_toBottomOf="@+id/new_adress_event_time" />
+
+    <Button
+        android:id="@+id/new_adress_event_cancel_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_red_basic_btn"
+        android:text="Отмена"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/new_adress_event_amount"
+        app:layout_constraintTop_toBottomOf="@+id/new_adress_event_amount" />
+
+    <Button
+        android:id="@+id/new_adress_event_save_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_green_basic_btn"
+        android:text="Создать"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/new_adress_event_amount"
+        app:layout_constraintTop_toBottomOf="@+id/new_adress_event_amount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
